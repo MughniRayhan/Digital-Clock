@@ -1,9 +1,6 @@
 const button = document.querySelector(".btn");
 const time = document.querySelector(".time");
-// const hour = document.querySelector(".hour");
-// const minute = document.querySelector(".min");
-// const second = document.querySelector(".sec");
-// const colon = document.querySelector(".colon");
+
 //display clock
 const display = () =>{
     console.log("first")
@@ -17,12 +14,19 @@ const display = () =>{
 
 
         let currentTime = hr + ":" + min + ":" + sec;
+
+       
        
         time.innerHTML = currentTime;
+        
         console.log(currentTime)
 
-        setInterval(display,1000);
+      
        
+}
+const clockTime = () =>{
+    setInterval(display,1000);
+    time.classList.toggle("show");
 }
 
 
@@ -34,4 +38,4 @@ const formatTime = (value) =>{
     return value;
 }
 
-button.addEventListener("click" , display);
+button.addEventListener("click" , clockTime);
