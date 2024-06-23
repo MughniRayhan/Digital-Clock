@@ -16,7 +16,8 @@
   width: 60%;
   height: 50vh;
   background: #333;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: -15px 35px 18px #5c5959;
 }
 .clock {
   height: 40vh;
@@ -57,6 +58,7 @@
   border: none;
   font-size: 10px;
   border-radius: 0.6rem;
+  border-left: 5px solid #111;
 }
 
 @media screen and (max-width: 1200px) {
@@ -82,7 +84,7 @@
     width: 60%;
     height: 75vh;
     background: #333;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
   }
   .clock {
     height: 50vh;
@@ -107,14 +109,15 @@
   .switch {
     display: flex;
     justify-content: end;
-    margin: 0.2rem;
+    margin: 0.3rem;
     padding-right: 0.3rem;
     .btn {
       background: #222;
       color: white;
-      padding: 0.2rem;
+      padding: 0.3rem;
       font-size: 8px;
       border-radius: 0.3rem;
+      border-left: 1px solid #111;
     }
   }
 }
